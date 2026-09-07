@@ -1,0 +1,26 @@
+Comandos de consola
+
+Comandos primera vez
+-Instalar node js
+-verificar su instalacion:
+node -v
+
+-verificar instalacion npm: 
+es el gestor de paquetes para utilizar node, ahora usamos five-server
+npm -v
+
+-Para hacer en clases
+-instalar manejador de paquetas pnpm:
+npm i -h pnpm
+
+Por Proyecto:
+-verificar si no existe el package .json, si no existe ejecutar
+pn init
+
+-instalar paquete five-server
+pn add five-server
+
+-Reinstalar paquetes si existe package.json
+pn install
+
+-Configurar scripts -> "dev; "five-server"

@@ -1,0 +1,18 @@
+/*
+Sintaxis
+*/
+
+/*Regla de estilo 
+selector{
+    propiedad1: valor;
+    propiedad2: valor;
+}
+   */ 
+
+/*Selectores de tipo */
+body{
+    background-color: #ade9fc; /* #000000 #ffffff */
+}
+header{
+    background-color: azure;
+}
