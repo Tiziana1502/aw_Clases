@@ -6,12 +6,18 @@ Comandos primera vez
 node -v
 
 -verificar instalacion npm: 
+https://pnpm.io/es/ 
+https://www.npmjs.com/
+
 es el gestor de paquetes para utilizar node, ahora usamos five-server
 npm -v
 
 -Para hacer en clases
 -instalar manejador de paquetas pnpm:
-npm i -h pnpm
+npm i -g pnpm
+
+-Entrar a carpeta clases
+cd y arrastro la carpeta
 
 Por Proyecto:
 -verificar si no existe el package .json, si no existe ejecutar
@@ -24,3 +30,4 @@ pn add five-server
 pn install
 
 -Configurar scripts -> "dev; "five-server"
+
