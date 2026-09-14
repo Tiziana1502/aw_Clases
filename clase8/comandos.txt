@@ -31,3 +31,5 @@ pn install
 
 -Configurar scripts -> "dev; "five-server"
 
+-Abrir html en navegador
+pn dev

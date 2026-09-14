@@ -1,0 +1,52 @@
+
+/*SELECTOR UNIVERSAL*/ 
+*{
+    box-sizing: border-box;
+}
+/*RESET*/
+html,
+body,
+h1,
+h2,
+h3,
+ul{
+    padding: 0%;
+    margin: 0%;
+}
+
+/*GENERICOS*/ 
+body{
+    background-color: #eee; 
+}
+
+a{
+    color: #063068;
+    text-decoration: none;
+}
+
+/*LAYOUT O PLANTILLA*/
+.encabezado-principal{
+    padding: 5px 10px 20px 10px;
+    background-color: #cdd0da;
+    border-bottom: 2px solid #45517a;
+}
+/*SELECTOR COMBINADO*/
+.encabezado-principal nav{
+    width: 100%;
+    height: 120px;
+    padding: 5px;
+    border: 2px solid #000000;
+    background-color: #879bc4;
+}
+
+.contenido-principal{
+    padding: 10px;
+}
+.contenido-principal form input{
+    display: block;    
+}
+
+.pie-principal{
+    background-color: #cdd0da;
+}
+
