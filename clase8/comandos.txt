@@ -16,6 +16,7 @@ npm -v
 -instalar manejador de paquetas pnpm:
 npm i -g pnpm
 
+-Para hacer cuando el proyecto esta creado
 -Entrar a carpeta clases
 cd y arrastro la carpeta
 
