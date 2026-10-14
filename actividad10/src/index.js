@@ -32,7 +32,7 @@ for(let i = 0; i < 11; i++) {
 }
 
 //Punto B
-for(let i = 11; i > 0; i++) {
+for(let i = 10; i > 0; i--) {
     console.log(i)
 }
 
