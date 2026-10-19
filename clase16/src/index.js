@@ -44,6 +44,7 @@ for(let i = 0; i < numeros.length; i++) {
 
 //Objetos
 const persona = {
+    //clave (propiedad) : valor
     edad: 20,
     estudia: true,
     nombre: "Tiziana",
