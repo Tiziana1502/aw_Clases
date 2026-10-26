@@ -115,3 +115,9 @@ const contenedorProductos = document.getElementById("contenedor-productos")
 
 // Llamamos a la función y renderizamos el String devuelto con innerHTML
 contenedorProductos.innerHTML = renderizarProductos(contenedorProductos, productosMascotas)
+
+//Filter
+const numerosFiltrados = numeros.filter((numero) => {
+    return numero > 10 //retornar un booleano
+})
+console.log(numerosFiltrados)
