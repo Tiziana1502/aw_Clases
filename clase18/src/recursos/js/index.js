@@ -71,55 +71,47 @@ const productosMascotas = [
   }
 ];
 
+//TAREA CLASE 18
+// Función de renderizado
+// 1er parámetro -> referencia del contenedor (elemento del DOM)
+// 2do parámetro -> arreglo de productos
+// retorno       -> String con el HTML listo para asignar con innerHTML
+const renderizarProductos = (contenedor, productos) => {
+    // Si no existe el contenedor en el DOM, no hay dónde renderizar
+    if (!contenedor) {
+        console.error("renderizarProductos: no se encontró el contenedor")
+        return ''
+    }
 
-//Referenciamos un elemento del DOM a partir de su ID
+    let productosHTML = ''
+    productos.forEach((producto) => {
+        productosHTML += `
+        <article>
+            <h3>${producto.nombre}</h3>
+            <picture>
+                <img src="${producto.imagen}" alt="${producto.nombre}">
+            </picture>
+            <p>
+                ${producto.descripcion}
+            </p>
+            <ul>
+                <li>
+                    Talles: ${producto.talles.join(", ")}
+                </li>
+                <li>
+                    Precio $ ${producto.precio}
+                </li>
+            </ul>
+            <button>Agregar al carrito</button>
+        </article>
+        `
+    })
+
+    return productosHTML
+}
+
+// Referenciamos un elemento del DOM a partir de su ID
 const contenedorProductos = document.getElementById("contenedor-productos")
-//console.log(contenedorProductos)
-//contenedorProductos.textContent = '<h3>producto 1</h3>' solo texto 
-//contenedorProductos.innerHTML = '<h3>producto 1</h3>'
-// contenedorProductos.innerHTML = `
-// <!-- <article>
-//     <h3>Correa</h3>
-//         <picture>
-//             <img src="./recursos/imagenes/productos/perro_correa.jpg" alt="Perro mediano con correa">
-//         </picture>
-//         <p>
-//             Correa azul 1 metro
-//         </p>
-//         <ul>
-//             <li>
-//                 Talle L M S
-//             </li>
-//             <li>
-//                 Precio $50.000
-//             </li>
-//         </ul>
-//         <button>Agregar al carrito</button>
-// </article> -->
-// `
 
-let productosHTML = ''
-productosMascotas.forEach((producto)=>{
-    productosHTML += `
-    <article>
-    <h3>${producto.nombre}</h3>
-        <picture>
-            <img src=${producto.imagen}>
-        </picture>
-        <p>
-            ${producto.descripcion}
-        </p>
-        <ul>
-            <li>
-                ${producto.talles}
-            </li>
-            <li>
-                Precio $ ${producto.precio}
-            </li>
-        </ul>
-        <button>Agregar al carrito</button>
-    </article>
-    `
-
-})
-contenedorProductos.innerHTML = productosHTML
+// Llamamos a la función y renderizamos el String devuelto con innerHTML
+contenedorProductos.innerHTML = renderizarProductos(contenedorProductos, productosMascotas)
